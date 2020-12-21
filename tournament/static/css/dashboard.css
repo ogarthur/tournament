@@ -1,0 +1,11 @@
+.unfollow {
+    opacity: 0.7;
+}
+
+.read-more {
+    color: #cc661d
+}
+
+.show-read-more .more-text {
+    display: none;
+}

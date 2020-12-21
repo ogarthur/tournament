@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* COLOR PALETTES*/
+
+    /*redgreen*/
+    /*  --c-one:#C7493A;
+      --c-two:#A33327;
+      --c-three:#689775;
+      --c-four:#907163;
+      --c-five:#AD8174;
+      /*redblack*/
+    /* --c-one:#1a1a1D;
+       --c-two:#4E4E50;
+       --c-three:#6F2232;
+       --c-four:#950740;
+       --c-five:#C3073F;
+
+       /*citrus*//*
+    --c-one: #61892f;
+    --c-two: #86c232;
+    --c-three: #222629;
+    --c-four: #474b4f;
+    --c-five: #6b6e70;
+*/
+    --c-one: #c0770b;
+    --c-two: #ff9800;
+    --c-three: #222629;
+    --c-four: #474b4f;
+    --c-five: #6b6e70;
+
+}
+
+.color-one {
+    color: var(--c-one)!important;
+}
+
+.color-two {
+    color: var(--c-two)!important;;
+}
+.background-one{
+    background: linear-gradient(60deg, #FF9800, #C0770B)
+
+
+
+}
+.nav-tabs{
+    border: none!important;
+}
+html,
+body {
+    font-family: "Roboto script=all rev=2", "Adobe Blank";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    height: 100%;
+    position: relative;
+    background-color: var(--c-five);
+    height: 100%;
+
+}
+
+.content {
+    margin: 0 !important;
+    padding: 0 !important;;
+}
+
+.log-out a {
+    background-color: red;
+
+}
+
+.log-out a, .log-out i {
+    color: white !important;
+}
+
+.log-out {
+    color: white !important;
+}
+
+.btn-run {
+    background-color: var(--c-two);
+    color: #fff;
+    border-color: var(--c-one);
+    box-shadow: 0 2px 2px 0 rgba(255, 152, 0, 0.14), 0 3px 1px -2px rgba(192, 119, 11, 0.2), 0 1px 5px 0 rgba(192, 119, 11, 0.12);
+}
+
+/*TEMPLATE*/
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+    height: 100%;
+}
+
+a {
+    color: var(--c-two);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--c-one);
+    text-decoration: none;
+}
+
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+
+/*SIDEBAR*/
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+#sidebar .logo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 0 0.5rem 0;
+}
+
+#sidebarCollapse {
+    background-color: var(--c-two);
+    color: var(--c-four);
+    border: none;
+    text-decoration: none;
+}
+
+#sidebar {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--c-four);
+    text-align: center;
+}
+
+#sidebar .logo span {
+    display: block;
+}
+
+.hide-menu {
+    display: none;
+}
+
+
+.d-flex {
+    display: flex !important;
+    height: 100%;
+}
+
+#sidebar li {
+    border-bottom: 1px solid #705454;
+    padding: 0.2rem 0 0.2rem 0;
+}
+
+#homeSubmenu li:last-child {
+    border: none;
+}
+
+.sidebar {
+    background-color: var(--c-three);
+}
+
+/*END SIDEBAR*/
+/*CARDS*/
+.card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem 0 3rem;
+}
+
+.card {
+    margin-top: 1rem;
+    background-color: var(--c-three);
+    color: white;
+}
+
+.card-title {
+    color: white;
+    font-size: 1.5em;
+}
+
+/*END CARD*/
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+
+}
+
+.btn-offer {
+    background-color: var(--c-two);
+}
+
+.btn-offer:hover {
+    background-color: var(--c-one);
+}
+
+/* TABLE*/
+.select,
+#locale {
+    width: 100%;
+}
+
+.like {
+    margin-right: 10px;
+}
+
+/*  END TABLE*/
+
+

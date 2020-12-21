@@ -1,0 +1,40 @@
+   {% load static %}
+    <head>
+
+    </head><link href="{% static 'css/login.css' %}" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}" type="image/gif" sizes="16x16">
+    <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon"/>
+    <title>LOGIN</title>
+    </head>
+    <body>
+<div class="login-page">
+        {% if login_error %}
+            <h2 class="error_warning">{{ login_error }}</h2>
+        {% endif %}
+  <div class="form">
+
+
+
+                      <form action="{% url 'account_app:user_login' %}" method="post" class="login-form">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label class="control-label" for="username">Username:</label>
+                        <input class="form-control" type="text" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="password">Password:</label>
+                        <input class="form-control" type="password" name="password">
+                    </div>
+                    <div class="text-center">
+                        <input class="btn login-btn" type="submit" name="" value="Login">
+                    </div>
+                </form>
+  </div>
+</div>
+    <script>
+        $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+    </script>
+    </body>
